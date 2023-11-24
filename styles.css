@@ -1,0 +1,229 @@
+/* styles.css */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  div.desc {
+    padding: 0%;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .item_one img.logo {
+    width: 15px; /* Adjust the width as needed */
+    height: 20px; /* Automatically adjust the height to maintain aspect ratio */
+    padding: 10px;
+  }
+
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px;
+  }
+
+/* Add a border between all four items */
+.gallery-item:nth-child(odd) {
+    border-right: none;
+  }
+
+  .gallery1 {
+    text-align: center; /* Center the text within the container */
+    padding: 20px;
+  }
+
+  .gallery1 h1 {
+    margin: 0; /* Optional: Remove default margin for the h1 element */
+  }
+
+  .gallery1 a {
+    display: block; /* Make the link a block-level element */
+    margin-top: 10px; /* Optional: Add spacing between the h1 and the link */
+  }
+
+  .gallery1 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gallery2 {
+    background-color: black;
+    color: white; /* Optional: Set text color to white for better visibility on a black background */
+    padding: 20px; /* Optional: Add padding for better spacing */
+    text-align: center;
+  }
+
+  .gallery2 {
+    margin-bottom: 20px; /* Adjust the value as needed for the desired spacing */
+  }
+
+  .gallery2 h1, .gallery2 h2, .gallery2 h5 {
+    margin: 0; /* Optional: Remove default margin for the heading elements */
+  }
+
+  .gallery2 a {
+    display: block; /* Make the link an block element */
+    margin-top: 10px; /* Optional: Add spacing between the text and the link */
+  }
+
+  .gallery2 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gallery3 {
+    text-align: center; /* Center the text within the container */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery3 h1, .gallery3 h4 {
+    margin: 0; /* Optional: Remove default margin for the heading elements */
+  }
+
+  .gallery3 a {
+    display: block; /* Make the link an block element */
+    margin-top: 10px; /* Optional: Add spacing between the text and the link */
+  }
+
+  .gallery3 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gallery4 {
+    text-align: center; /* Center the text within the container */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery4 h1, .gallery4 h4 {
+    margin: 0; /* Optional: Remove default margin for the heading elements */
+  }
+
+  .gallery4 a {
+    display: block; /* Make the link an inline-block element */
+    margin-top: 10px; /* Optional: Add spacing between the text and the link */
+  }
+
+  .gallery4 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .gallery5 {
+    text-align: center; /* Center the text within the container */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery5 h1, .gallery5 h4 {
+    margin: 0; /* Optional: Remove default margin for the heading elements */
+  }
+
+  .gallery5 a {
+    display: block; /* Make the link an inline-block element */
+    margin-top: 10px; /* Optional: Add spacing between the text and the link */
+  }
+
+  .gallery5 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gallery6 {
+    text-align: center; /* Center the text within the container */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery6 h1, .gallery6 h4 {
+    margin: 0; /* Optional: Remove default margin for the heading elements */
+  }
+
+  .gallery6 a {
+    display: block; /* Make the link an inline-block element */
+    margin-top: 10px; /* Optional: Add spacing between the text and the link */
+  }
+
+  .gallery6 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .item_one{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  
+  
+  /* Your existing styles here */
+
+/* Media queries for tablets and small desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .gallery3,
+    .gallery4,
+    .gallery5,
+    .gallery6 {
+      width: 48%; /* Adjust the width as needed */
+      margin: 1%; /* Add margin for spacing between the boxes */
+    }
+  }
+  
+  /* Media queries for smaller screens, such as smartphones */
+  @media (max-width: 767px) {
+    .gallery-container {
+      display: block;
+    }
+  
+    .gallery3,
+    .gallery4,
+    .gallery5,
+    .gallery6 {
+      width: 100%; /* Take up full width on smaller screens */
+      margin-bottom: 10px; /* Add margin for spacing between the boxes */
+    }
+    
+  }
+  
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+    .item_one {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item_one li {
+      margin-bottom: 5px;
+    }
+  }
+  
